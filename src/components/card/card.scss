@@ -1,0 +1,71 @@
+$font-stack: Verdana, Geneva, sans-serif;
+$font-size: 0.8rem;
+$background-color: #ffffff;
+$form-background-color: #000000;
+
+.form-container {
+  padding: 10% 20% 10%;
+  background-color: $background-color;
+  font-size: $font-size;
+  font-family: $font-stack;
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $form-background-color;
+    border-radius: 10px;
+    padding: 5%;
+
+    .left-container {
+      flex: 1 1 75%;
+      padding: 1%;
+      color: darkgray;
+      input {
+        font-size: $font-size;
+      }
+    }
+
+    .right-container {
+      flex: 1;
+      img {
+        width: 100%;
+      }
+    }
+
+    .card-footer {
+      width: 100%;
+      font-weight: bold;
+      background-color: $form-background-color;
+
+      span.amount {
+        padding: 5%;
+        color: #d1ac6a;
+      }
+
+      .total-amount-info {
+        top: 50%;
+        position: relative;
+        color: #c0c0c0;
+        transform: translateY(-50%);
+      }
+
+      .button-paynow {
+        width: 80%;
+        padding: 10%;
+        float: right;
+        border: none;
+        font-size: $font-size;
+        background-color: #c0c0c0;
+        border-radius: 35px;
+
+        &:focus:enabled {
+          box-shadow: 0 0 3pt 2pt #696969;
+        }
+
+        &:hover:enabled {
+          box-shadow: 0 0 3pt 2pt #696969;
+        }
+      }
+    }
+  }
+}
